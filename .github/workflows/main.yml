@@ -7,7 +7,7 @@ on:
         branches:
             - '*'
 jobs:
-    Task and Greet:
+    Task-and-Greet:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
