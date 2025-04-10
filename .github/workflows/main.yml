@@ -12,8 +12,8 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Greeter
-              uses: snowkluster/composite-actions/actions/greeter
+              uses: snowkluster/composite-actions/actions/greeter@master
               with:
                 who-to-greet: Rohan!
             - name: TODO checker
-              uses: snowkluster/composite-actions/actions/todo 
+              uses: snowkluster/composite-actions/actions/todo@master
