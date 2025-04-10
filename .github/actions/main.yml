@@ -1,0 +1,19 @@
+name: Actions Tester
+on:
+    push:
+        branches:
+            - '*'
+    pull_request:
+        branches:
+            - '*'
+jobs:
+    Task and Greet:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Greeter
+              uses: snowkluster/composite-actions/actions/greeter
+              with:
+                who-to-greet: Rohan!
+            - name: TODO checker
+              uses: snowkluster/composite-actions/actions/todo 
